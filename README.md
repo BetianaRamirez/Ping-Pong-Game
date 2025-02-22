@@ -19,7 +19,7 @@ Este es un juego de Ping Pong donde dos jugadores pueden competir entre sí. El 
 2. Navega al directorio del proyecto:
 	cd ping-pong-game/proyecto
 
-3. Abre index.html en tu navegador preferido:
+3. Abre index.html en tu navegador preferido
 
 
 ## Captura de Pantalla
