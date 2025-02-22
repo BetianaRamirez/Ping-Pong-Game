@@ -1,0 +1,113 @@
+/* Estilo general de todo el body */
+body {
+  background-image: url(assets/images/pingpong.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+/* Estilos generales para todos los elementos */
+* {
+  box-sizing: 'border-box';
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el título */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00ff00;
+  padding: 20px 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+/* Animación para el borde del canvas */
+@keyframes glowing-border {
+  0% { border-color: rgb(18, 190, 196); box-shadow: 0 0 10px rgb(18, 190, 196); }
+  14% { border-color: rgb(0, 255, 170); box-shadow: 0 0 20px rgb(0, 255, 170); }
+  28% { border-color: rgb(0, 195, 255); box-shadow: 0 0 30px rgb(0, 195, 255); }
+  42% { border-color: rgb(0, 140, 255); box-shadow: 0 0 20px rgb(0, 140, 255); }
+  56% { border-color: rgb(255, 0, 255); box-shadow: 0 0 25px rgb(255, 0, 255); }
+  70% { border-color: rgb(255, 94, 0); box-shadow: 0 0 30px rgb(255, 94, 0); }
+  84% { border-color: rgb(255, 255, 0); box-shadow: 0 0 25px rgb(255, 255, 0); }
+  100% { border-color: rgb(18, 190, 196); box-shadow: 0 0 10px rgb(18, 190, 196); }
+}
+
+/* Estilo para el canvas */
+#my-canvas {
+  display: block;
+  margin: auto;
+  align-content: center;
+  border: 10px solid rgb(18, 190, 196);
+  animation: glowing-border 2s infinite alternate;
+}
+
+/* Contenedor para los botones */
+.controls-container {
+  display: flex;
+  justify-content: center;  
+  gap: 30px;         
+  margin-top: 30px;    
+}
+
+/* Estilos para los botones */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Estilos para el botón de inicio */
+.start-button {
+  background-color: #00ff00;
+  color: #000;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+.start-button:hover {
+  background-color: #00cc00;
+  box-shadow: 0 0 20px #00cc00, 0 0 30px #00cc00, 0 0 40px #00cc00;
+}
+
+/* Estilos para el botón de detener */
+.stop-button {
+  background-color: #ff0000;
+  color: #000;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}
+.stop-button:hover {
+  background-color: #cc0000;
+  box-shadow: 0 0 20px #cc0000, 0 0 30px #cc0000, 0 0 40px #cc0000;
+}
+
+/* Estilos para el botón de reinicio */
+.restart-button {
+  background-color: #0000ff;
+  color: #fff;
+  box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff;
+}
+.restart-button:hover {
+  background-color: #0000cc;
+  box-shadow: 0 0 20px #0000cc, 0 0 30px #0000cc, 0 0 40px #0000cc;
+}
+
+/* Estilo para el pie de pagina */
+footer {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  color: #00ff00;
+  padding: 20px 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
